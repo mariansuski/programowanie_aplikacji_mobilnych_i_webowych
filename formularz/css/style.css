@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 140vh;
+    background-color: #ccc;
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+h1 {
+    margin-top: 5%;
+    text-transform: uppercase;
+}
+
+p {
+    color: blue;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 90%;
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    min-height: 1000px;
+
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    width: 60%;
+    align-items: center;
+}
+
+.sex {
+    flex-direction: row;
+}
+
+.sex label {
+    font-size: 20px;
+    width: 60%;
+    text-transform: uppercase;
+
+}
+
+.sex input {
+    width: 40px
+}
+
+.input-file {
+    width: 80%;
+}
+
+.input-file label {
+    font-size: 20px;
+}
+
+label {
+    font-size: 30px;
+}
+
+div input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    text-align: left;
+    padding-left: 30px;
+    font-size: 17px;
+}
+
+.submit {
+    margin: 20px 0;
+    width: 40%;
+    background-color: #fff;
+    border: black solid 2px;
+    border-radius: 5px;
+    padding: 15px 0;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.5s;
+    line-height: 30%;
+}
+
+.submit:hover {
+    background-color: #aaa;
+    border-color: #aaa;
+    color: green;
+
+}
