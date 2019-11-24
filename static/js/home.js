@@ -5,5 +5,5 @@ function goToLogin() {
 }
 
 function goToRegister() {
-   location.replace('/register.html')
+   window.location='/templates/register.html'
 }
