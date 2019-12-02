@@ -1,5 +1,5 @@
-docker build -t html-server-image:v1 .
+Repository for "Programowanie aplikacji mobilnych i webowych" laboratories
 
-then
+To run:
 
-docker run -d -p 80:80 html-server-image:v1
+$ docker-compose up -d

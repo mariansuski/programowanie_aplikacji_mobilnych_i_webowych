@@ -1,22 +1,16 @@
-FROM nginx
+FROM python:3
+EXPOSE 5000
 
-COPY . /usr/share/nginx/html
+WORKDIR /var/www
 
-COPY nginx.conf /etc/nginx/nginx.conf
+RUN pip install --upgrade pip
 
-#FROM python:3
-#EXPOSE 5000
+COPY musthave musthave
+RUN pip install -r musthave
 
-#WORKDIR /var/www
+COPY . .
 
-#RUN pip install --upgrade pip
+ENV FLASK_APP run.py
+ENV FLASK_RUN_HOST 0.0.0.0
 
-#COPY musthave musthave
-#RUN pip install -r musthave
-
-#COPY . .
-
-#ENV FLASK_APP run.py
-#ENV FLASK_RUN_HOST 0.0.0.0
-
-#CMD ["flask", "run"]
+CMD ["flask", "run"]

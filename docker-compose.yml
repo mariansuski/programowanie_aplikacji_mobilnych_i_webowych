@@ -1,9 +1,10 @@
 version: '3'
 services:
-  web:
+  app:
     build: .
+    container_name: app-container
     ports:
-      - "5000:5000"
+      - "8080:5000"
     environment:
       - REDIS_NAME=redis
     depends_on:
