@@ -1,13 +1,16 @@
-version: '3'
+version: '2'
 services:
   app:
     build: .
-    container_name: app-container
-    ports:
-      - "8080:5000"
     environment:
-      - REDIS_NAME=redis
+      - REDIS_URL=redis://redis_db:6379
+    ports:
+      - "5000:5000"
+    volumes:
+          - .:/code
+
     depends_on:
-      - redis
+      - redis_db
   redis:
     image: redis
+

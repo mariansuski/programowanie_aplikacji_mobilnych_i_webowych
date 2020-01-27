@@ -1,0 +1,48 @@
+.title {
+    display: table;
+    margin: 0 auto;
+  }
+
+  html {
+    font: 120% Arial, sans-serif;
+    width: 100%;
+    height: 100%;
+  }
+
+  body {
+    background: linear-gradient(45deg, #0064c8, #04b8ff);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+
+  .registrationForm {
+    padding: 2%;
+  }
+
+  nav {
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+
+  .container {
+    margin: 2%;
+    padding: 2%;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+  }
+
+  .form-control {
+    border-width: 2px !important;
+  }
+
+  .form-control:focus {
+    -webkit-box-shadow: 0 0 0 0 !important;
+            box-shadow: 0 0 0 0 !important;
+  }
+
+  p[class*="-issue"] {
+    color: #c50000;
+    padding: 0;
+  }

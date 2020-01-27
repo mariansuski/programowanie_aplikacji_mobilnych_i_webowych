@@ -1,16 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Home</title>
-    <link rel="stylesheet" href="{{ url_for('static',filename='css/index.css') }}">
-</head>
-<body>
-<div class="wrapper">
-    <h1>Hi! What do you want to do?</h1>
-    <button class="register">Register</button>
-    <button class="login">Login</button>
+{% extends 'base.html' %}
+
+{% block title %}
+Home
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <h1 class="title">Home</h1>
+    </div>
+    <div class="row align-middle">
+        <div class="col-12">
+            <ul class="list-group">
+                <li class="list-group-item"><a href={{ url_for('register') }}>Register</a></li>
+                <li class="list-group-item"><a href={{ url_for('login') }}>Login</a></li>
+            </ul>
+
+        </div>
+    </div>
 </div>
-<script src="{{ url_for('static', filename='js/login.js') }}"></script>
-</body>
-</html>
+{% endblock %}
