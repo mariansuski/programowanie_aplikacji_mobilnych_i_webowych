@@ -3,7 +3,7 @@ const login = document.querySelector(".login");
 
 
 register.addEventListener('click',()=>{
-    location.href = "{{ url_for('templates', filename='register') }}";
+    window.location.replace("{{ url_for('templates', filename='register') }}");
 });
 login.addEventListener("click",()=>{
     location.href = "login.html";
